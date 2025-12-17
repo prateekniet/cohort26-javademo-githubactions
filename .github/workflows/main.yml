@@ -6,8 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: Dev
-    env:
-      DEPLOY_ENV: $DEPLOY_ENV
     steps:
       - name: Print variable
         run: echo "Deploying to $DEPLOY_ENV"
