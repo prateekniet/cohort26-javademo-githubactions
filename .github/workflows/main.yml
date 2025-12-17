@@ -5,8 +5,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-     DB_PASSWORD: ${{ secrets.DB_PASS }}
+    environment: Prod
     steps:
       - name: Print variable
-        run: echo $DB_PASSWORD
+        run: echo ${{ vars.DEPLOY_NAME }}
