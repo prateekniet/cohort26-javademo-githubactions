@@ -5,5 +5,7 @@ jobs:
   build:
    runs-on: ubuntu-latest
    steps:
-   - name: Print variable
-     run: git --version
+   - name: Clone the git repository
+     run: git clone https://github.com/prateekniet/cohort26-javademo-githubactions.git
+   - name: Compile using maven
+     run: mvn clean install -f Javarepo1/pom.xml
