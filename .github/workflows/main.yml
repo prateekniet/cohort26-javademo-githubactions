@@ -7,5 +7,10 @@ jobs:
    steps:
    - name: Clone the git repository
      run: git clone https://github.com/prateekniet/cohort26-javademo-githubactions.git
+   - name : Install dependent packages
+     run : | 
+      sudo apt update
+      sudo apt install -y openjdk-17-jdk
+      sudo apt install -y maven
    - name: Compile using maven
      run: mvn clean install -f Javarepo1/pom.xml
