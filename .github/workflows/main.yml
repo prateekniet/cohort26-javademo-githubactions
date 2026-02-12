@@ -13,4 +13,4 @@ jobs:
       sudo apt install -y openjdk-17-jdk
       sudo apt install -y maven
    - name: Compile using maven
-     run: ls -ltr /home/runner/work/cohort26-javademo-githubactions/cohort26-javademo-githubactions
+     run: ls -ltr /home/runner/work/cohort26-javademo-githubactions/cohort26-javademo-githubactions/cohort26-javademo-githubactions
