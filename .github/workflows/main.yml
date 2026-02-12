@@ -1,0 +1,10 @@
+name: CI for Java using GithubActions
+on:
+ push:
+  branches: [main]
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Print variable
+     run: echo "This is mine first workflow"
