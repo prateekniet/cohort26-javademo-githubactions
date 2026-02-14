@@ -14,3 +14,8 @@ jobs:
       sudo apt install -y maven
    - name: Compile using maven
      run: mvn clean install -f Javarepo1/pom.xml
+   - name: Upload Jar
+     uses: actions/upload-artifact@v4
+     with:
+      name: my-java-application
+      path: cohort26-javademo-githubactions/Javarepo1/target/*.jar
