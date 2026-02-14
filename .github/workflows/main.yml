@@ -18,4 +18,4 @@ jobs:
      uses: actions/upload-artifact@v4
      with:
       name: my-java-application
-      path: cohort26-javademo-githubactions/Javarepo1/target/*.jar
+      path: Javarepo1/target/*.jar
